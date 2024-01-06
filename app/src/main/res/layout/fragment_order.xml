@@ -17,23 +17,120 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCustomerDetail"
+        android:text="Customer"
+        app:layout_constraintTop_toBottomOf="@+id/orderTitle"/>
+
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:id="@+id/etNamaCustomer"
         android:hint="Nama Customer"
-        app:layout_constraintTop_toBottomOf="@id/orderTitle"
+        android:textSize="16sp"
+        android:paddingStart="16dp"
+        android:background="@drawable/custom_edit_text_rounded"
+        app:layout_constraintTop_toBottomOf="@id/tvCustomerDetail"
+        android:layout_marginTop="8dp"/>
 
-    <Button
-        android:id="@+id/btnAddBarang"
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/etTanggalOrder"
+        android:hint="Tanggal Pesanan"
+        android:textSize="16sp"
+        android:paddingStart="16dp"
+        android:background="@drawable/custom_edit_text_rounded"
+        app:layout_constraintTop_toBottomOf="@id/etNamaCustomer"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="29dp"
-        android:layout_marginEnd="213dp"
-        android:text="Tambah Data Barang"
-        android:backgroundTint="#0017AA"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etNamaCustomer" />
+        android:id="@+id/tvDetailBarang"
+        android:text="Barang"
+        app:layout_constraintTop_toBottomOf="@+id/etTanggalOrder"
+        android:layout_marginTop="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/tvDetailBarang"
+        android:id="@+id/linearDetailBarang">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/etNamaBarang"
+            android:hint="Nama Barang"
+            android:textSize="16sp"
+            android:paddingStart="16dp"
+            android:background="@drawable/custom_edit_text_rounded"
+            app:layout_constraintTop_toBottomOf="@id/tvDetailBarang"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/etQty"
+            android:hint="Quantity"
+            android:textSize="16sp"
+            android:paddingStart="16dp"
+            android:background="@drawable/custom_edit_text_rounded"
+            app:layout_constraintTop_toBottomOf="@id/etNamaBarang"
+            android:layout_marginTop="8dp"
+            android:layout_weight="3"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/btnTambahBarang"
+        android:text="Tambah Barang"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/linearDetailBarang"
+        android:background="@color/primary_green"
+        android:layout_marginTop="8dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rvDisplayOrder"
+        app:layout_constraintTop_toBottomOf="@id/btnTambahBarang"
+        app:layout_constraintBottom_toTopOf="@id/btnSimpanPesanan"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/btnSimpanPesanan"
+        android:text="Simpan Pesanan"
+        android:textColor="@color/white"
+        android:background="@color/primary_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"/>
+
+<!--    <Button-->
+<!--        android:id="@+id/btnAddBarang"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="29dp"-->
+<!--        android:layout_marginEnd="213dp"-->
+<!--        android:text="Tambah Data Barang"-->
+<!--        android:backgroundTint="#0017AA"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/etNamaCustomer" />-->
 </androidx.constraintlayout.widget.ConstraintLayout>
