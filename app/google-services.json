@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "462979021368",
+    "project_id": "wijaya-po",
+    "storage_bucket": "wijaya-po.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:462979021368:android:79c3857391fd04ff2504cd",
+        "android_client_info": {
+          "package_name": "paba.uas.cobaappwijaya"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmnWrcJhvGHE24bqJd-6USl4sSDzpZAjk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
