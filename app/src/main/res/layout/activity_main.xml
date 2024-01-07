@@ -33,10 +33,10 @@
     <LinearLayout
         android:id="@+id/navbar"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="64dp"
         android:background="#FFFFFF"
         android:backgroundTint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragmentContainerView"
         android:gravity="center|center_vertical"
         android:orientation="horizontal">
 
@@ -83,7 +83,7 @@
         app:layout_constraintBottom_toTopOf="@+id/navbar"
         app:layout_constraintTop_toBottomOf="@+id/bgTittle"
         android:layout_marginTop="64dp"
-        android:layout_marginBottom="84dp"
+        android:layout_marginBottom="64dp"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
         android:paddingTop="16dp"
