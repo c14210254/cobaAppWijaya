@@ -38,12 +38,14 @@
         app:layout_constraintTop_toBottomOf="@id/tvCustomerDetail"
         android:layout_marginTop="8dp"/>
 
-    <EditText
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:id="@+id/etTanggalOrder"
-        android:hint="Tanggal Pesanan"
         android:textSize="16sp"
+        android:contextClickable="true"
+        android:hint="dd-MM-yyyy"
+        android:inputType="date"
         android:paddingStart="16dp"
         android:background="@drawable/custom_edit_text_rounded"
         app:layout_constraintTop_toBottomOf="@id/etNamaCustomer"
