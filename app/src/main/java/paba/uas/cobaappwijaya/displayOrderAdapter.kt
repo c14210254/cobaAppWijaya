@@ -36,7 +36,7 @@ class displayOrderAdapter(private val orderList: List<OrderItem>) :
         fun bind(orderItem: OrderItem) {
             textNamaBarang.text = orderItem.namaBarang
             textQtyBarang.text = orderItem.qtyBarang.toString()
-
+            textHarga.text = "Rp. " + orderItem.totalHarga.toString()
             // Assuming you have a click listener for the cancel button
             btnCancel.setOnClickListener {
                 // Handle cancel button click
