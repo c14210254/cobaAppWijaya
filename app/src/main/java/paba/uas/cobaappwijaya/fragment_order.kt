@@ -129,11 +129,11 @@ class fragment_order : Fragment() {
             showDatePicker()
             Log.d("DatePicker", "MASOK")
         }
-//        pindahAddPage = view.findViewById(R.id.btnAddBarang)
-//
-//        pindahAddPage.setOnClickListener {
-//            navigateToEditProfile()
-//        }
+        pindahAddPage = view.findViewById(R.id.btnAddBarang)
+
+        pindahAddPage.setOnClickListener {
+            navigateToEditProfile()
+        }
         return view
     }
     private fun addOrderItem() {

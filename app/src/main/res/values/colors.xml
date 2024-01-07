@@ -5,5 +5,6 @@
     <color name="primary_green">#006341</color>
     <color name="secondary_green">#279C68</color>
     <color name="primary_red">#C11B15</color>
-    <color name="disabled_grey">#7F7F7F</color>
+    <color name="disabled_grey">#808080</color>
+    <color name="hint_text">#808080</color>
 </resources>
