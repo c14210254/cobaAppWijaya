@@ -119,18 +119,18 @@
         android:text="Simpan Pesanan"
         android:textColor="@color/white"
         android:background="@color/primary_green"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnAddBarang"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="8dp"/>
 
-<!--    <Button-->
-<!--        android:id="@+id/btnAddBarang"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="29dp"-->
-<!--        android:layout_marginEnd="213dp"-->
-<!--        android:text="Tambah Data Barang"-->
-<!--        android:backgroundTint="#0017AA"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/etNamaCustomer" />-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAddBarang"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Tambah Barang Baru"
+        android:textColor="@color/white"
+        android:background="#0017AA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

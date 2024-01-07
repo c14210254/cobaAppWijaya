@@ -39,23 +39,29 @@ class MainActivity : AppCompatActivity() {
         fragmentManager = supportFragmentManager
         fragmentManager.beginTransaction().replace(R.id.fragmentContainerView, fragment).commit()
 
-        val color = "#28D5F3"
+        val color = "#006341"
         val colorInt = Color.parseColor(color)
         val colorStateList = ColorStateList.valueOf(colorInt)
 
         when (fragment) {
             is fragment_home -> {
                 Log.d("HOME", "masuk")
-                binding.btnHomeNavBar.backgroundTintList = colorStateList
-                binding.btnOrderNavBar.backgroundTintList =
-                    ContextCompat.getColorStateList(this, android.R.color.transparent)
+//                binding.btnHomeNavBar.backgroundTintList = colorStateList
+                binding.btnHomeNavBar.imageTintList = colorStateList
+                binding.btnOrderNavBar.imageTintList = ContextCompat.getColorStateList(this, android.R.color.darker_gray)
+//                binding.btnOrderNavBar.backgroundTintList =
+//                    ContextCompat.getColorStateList(this, android.R.color.transparent)
             }
             is fragment_order -> {
                 Log.d("ORDER", "masuk")
-                binding.btnOrderNavBar.backgroundTintList = colorStateList
-                binding.btnHomeNavBar.backgroundTintList =
-                    ContextCompat.getColorStateList(this, android.R.color.transparent)
+//                binding.btnOrderNavBar.backgroundTintList = colorStateList
+                binding.btnOrderNavBar.imageTintList = colorStateList
+                binding.btnHomeNavBar.imageTintList = ContextCompat.getColorStateList(this, android.R.color.darker_gray)
+//                binding.btnHomeNavBar.backgroundTintList =
+//                    ContextCompat.getColorStateList(this, android.R.color.transparent)
             }
         }
     }
+
+
 }

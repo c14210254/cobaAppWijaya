@@ -46,7 +46,7 @@
             android:layout_height="48dp"
             android:background="@drawable/roundedcornerbar"
             android:backgroundTint="#00FFFFFF"
-            android:src="@drawable/icon_home_outlined"
+            android:src="@drawable/home_nav_button"
             android:layout_marginEnd="24dp" />
 
         <ImageButton
@@ -55,13 +55,24 @@
             android:layout_height="48dp"
             android:background="@drawable/roundedcornerbar"
             android:backgroundTint="#00FFFFFF"
-            android:src="@drawable/icon_order_outlined"
+            android:src="@drawable/order_nav_button"
             app:layout_constraintBottom_toBottomOf="@+id/btnHomeNavBar"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginStart="24dp"/>
 
 
     </LinearLayout>
+
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/navbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="84dp"-->
+<!--        app:itemIconSize="32dp"-->
+<!--        app:itemIconTint="@color/disabled_grey"-->
+<!--        app:itemTextColor="@color/disabled_grey"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:menu="@drawable/bottom_navigation_menu" />-->
+
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
@@ -72,5 +83,9 @@
         app:layout_constraintBottom_toTopOf="@+id/navbar"
         app:layout_constraintTop_toBottomOf="@+id/bgTittle"
         android:layout_marginTop="64dp"
-        android:layout_marginBottom="100dp"/>
+        android:layout_marginBottom="84dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
